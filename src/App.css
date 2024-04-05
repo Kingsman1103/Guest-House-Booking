@@ -1,5 +1,66 @@
+*{
+  /* font-family: 'Sora' , sans-serif; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.imge{
+  margin-left: -200px;
+  height: 80px;
+  width: 145px;
+  /* font-size: 10000px; */
+}
+
+.lnm{
+  /* background-size:center;
+  background-position: center; */
+  /* height: 600px; */
+  width: 1498px;
+  height: 900px;
+}
+
+.heading1{
+  
+    /* Font & Text */
+    font-family: Poppins, sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 72px;
+    text-decoration: none solid rgb(14, 112, 148);
+    text-align:center;
+  
+  
+    /* Color & Background */
+    background-attachment: scroll;
+
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(14, 112, 148);
+  
+    /* Box */
+    height: 143.977px;
+    width: 1116.02px;
+    margin:100px auto auto auto;
+    padding: 0px;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
 }
 
 .App-logo {
@@ -36,3 +97,16 @@
     transform: rotate(360deg);
   }
 }
+
+.btn1{
+  /* margin-r/; */
+  margin-left:150px;
+  margin-right: 0px;
+  /* display: flex; */
+  position: absolute;
+}
+/* 
+.btn2{
+  position: relative;
+  /* display: flex; */
+  /* margin-right:100px; */

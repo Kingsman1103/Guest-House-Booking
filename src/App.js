@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import React from "react";
+import axios from "axios";
 import './App.css';
-
+import Navbar from "./components/Navbar";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Charges from "./pages/charges";
+import Availability from "./pages/availabilty";
+import Gallery from "./pages/gallery";
+import Guidelines from "./pages/guidelines";
+import Services from "./pages/services";
+import GuestHouseBookingForm from "./pages/form"
+import Login from "./components/login/Login"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Register from "./components/register/Register";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/about" exact element={<About/>} />
+        <Route path="/charges" exact element={<Charges/>} />
+        <Route path="/availability" exact element={<Availability/>} />
+        <Route path="/guidelines" exact element={<Guidelines/>} />
+        <Route path="/gallery" exact element={<Gallery/>} />
+        <Route path="/services" exact element={<Services/>} />
+        <Route path="/form" exact element={<GuestHouseBookingForm/>} />
+        <Route path="/Login" exact element={<Login/>} />
+        <Route path="/Register" exact element={<Register/>} />
+        
+      </Routes>
+      
+    </Router> ,
+   
+  </>
+     
   );
 }
 
